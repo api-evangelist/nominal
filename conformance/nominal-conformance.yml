@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.nominal.io, https://trust.nominal.io
+standards:
+- id: bearer-token-auth
+  conforms: true
+  evidence: Per-user API key supplied as HTTP bearer token to api.gov.nominal.io/api.
+- id: token-pagination
+  conforms: true
+  evidence: Paginated endpoints use request/response page tokens.
+- id: oauth2
+  conforms: false
+  evidence: No OAuth2/OIDC flows documented; auth is per-user bearer API key.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Uses the Conjure error model, not application/problem+json.
+- id: openapi
+  conforms: false
+  evidence: API is defined and code-generated via Conjure (Palantir), not OpenAPI.
+- id: soc2-type-ii
+  conforms: true
+  evidence: SOC 2 Type II report published on the Nominal Trust Center (trust.nominal.io).
+- id: cmmc
+  conforms: true
+  evidence: CMMC Level 1 and CMMC Level 2 Self-Assessment documents on trust.nominal.io.
+- id: nist-800-171
+  conforms: true
+  evidence: NIST 800-171 SPRS submission documented on trust.nominal.io.
+compliance_program:
+  url: https://trust.nominal.io
+  certifications: [SOC 2 Type II, CMMC Level 1, CMMC Level 2 Self-Assessment, NIST
+      800-171]

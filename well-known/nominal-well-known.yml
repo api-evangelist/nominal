@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of /.well-known/* across Nominal hosts
+hosts:
+- host: https://docs.nominal.io
+  documents:
+  - path: /.well-known/api-catalog
+    status: 200
+    file: nominal-api-catalog.json
+    note: RFC 9727 api-catalog; linkset present but empty.
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://www.nominal.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+- host: https://api.gov.nominal.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404

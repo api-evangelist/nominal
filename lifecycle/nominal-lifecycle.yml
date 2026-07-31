@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://status.nominal.io, https://docs.nominal.io
+versioning:
+  scheme: conjure-endpoint
+  docs: https://docs.nominal.io/api-reference
+  note: Conjure-generated API; versioning is per-endpoint. Client SDK/package releases
+    track the surface.
+status_page: https://status.nominal.io
+status_components:
+- Core Web Application
+- File ETL
+- Data Streaming
+- Compute
+- Trust Center
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  note: No public deprecation policy or RFC 8594 Sunset/Deprecation header support
+    documented on the reviewed surface.
+sla:
+  url: null

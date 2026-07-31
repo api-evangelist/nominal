@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.nominal.io/python/quickstart
+docs: https://docs.nominal.io/python/quickstart
+summary:
+  types: [http]
+  scheme: bearer
+  api_key_in: [header]
+  oauth2_flows: []
+base_url: https://api.gov.nominal.io/api
+schemes:
+- name: NominalApiKey
+  type: http
+  scheme: bearer
+  description: Nominal authenticates API requests with a per-user API token (bearer
+    token), issued under Settings -> API keys in the Nominal app. The token is attached
+    to a user and may access one or more workspaces. Tokens are supplied as a bearer
+    credential to the Conjure REST API at https://api.gov.nominal.io/api.
+  sources: [docs]
+concepts:
+- name: base_url
+  description: The URL through which the Nominal API is accessed; typically https://api.gov.nominal.io/api,
+    shown under Settings -> API keys.
+- name: workspace
+  description: A mechanism to isolate datasets; each user has one or more workspaces
+    and data in one cannot be seen from another. A token may access multiple workspaces.
+- name: profile
+  description: A named combination of base URL, API key, and workspace stored on disk
+    at ~/.config/nominal/config.yml via the `nom` CLI (recommended over embedding
+    the key in code).
+guidance: Never share or commit the Nominal API key. Prefer the `nom` CLI profile
+  store over inlining the token in scripts.

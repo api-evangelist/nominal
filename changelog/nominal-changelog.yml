@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: searched
+source: https://pypi.org/project/nominal/, https://github.com/nominal-io/nominal-client/releases
+scheme: semver
+surface: Python SDK (nominal) release stream — the public, dated changelog for the
+  Nominal client surface. The Conjure API itself is versioned per-endpoint and the
+  Rust `nominal-api` crate is auto-published on each API change.
+current_version: 1.153.0
+current_version_date: '2026-07-14'
+entries:
+- version: 1.153.0
+  date: '2026-07-14'
+  breaking: false
+  highlights: Latest published Nominal Python SDK release on PyPI (supports Python
+    3.10-3.14).
+notes: Nominal does not publish a single consolidated product changelog page (docs.nominal.io/changelog
+  returns 404); the SDK release stream on PyPI/GitHub is the dated source of record,
+  and product announcements appear on the blog (nominal.io/blog).

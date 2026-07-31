@@ -1,0 +1,44 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.nominal.io/python/quickstart, https://docs.nominal.io/api-reference
+api_style:
+  protocol: REST/JSON over HTTPS
+  framework: Conjure (Palantir) — SDKs (Python/Rust/Go/LabVIEW) are Conjure-generated
+    against api.gov.nominal.io/api
+  base_url: https://api.gov.nominal.io/api
+authentication:
+  style: bearer token (per-user API key)
+  ref: authentication/nominal-authentication.yml
+pagination:
+  style: token
+  description: Paginated endpoints use a page token supplied as part of both the request
+    and response schema; clients pass the returned next-page token to stream successive
+    pages of results.
+versioning:
+  scheme: conjure-endpoint
+  description: The API is Conjure-generated; versioning is per-endpoint rather than
+    a single URI/date version. SDK/package versions track the API surface (see changelog/).
+error_envelope:
+  format: conjure
+  description: Errors follow the Conjure error model (errorCode, errorName, errorInstanceId,
+    parameters) rather than RFC 9457 problem+json.
+  ref: null
+rate_limit_signaling:
+  documented: unknown
+core_entities:
+- run
+- dataset
+- asset
+- channel
+- ref-name
+- workbook
+- checklist
+- connection
+- video
+- log
+cross_links:
+  authentication: authentication/nominal-authentication.yml
+  lifecycle: lifecycle/nominal-lifecycle.yml
+  changelog: changelog/nominal-changelog.yml
+notes: Idempotency-key support is not documented on the public surface reviewed; no
+  Idempotency pointer is emitted (no fabrication).

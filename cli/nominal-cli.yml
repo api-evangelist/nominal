@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.nominal.io/python/quickstart, https://github.com/nominal-io/nominal-client-rs
+cli:
+  name: nom
+  language: rust
+  repo: https://github.com/nominal-io/nominal-client-rs
+  install:
+  - method: cargo
+    command: cargo install --git https://github.com/nominal-io/nominal-client-rs
+  description: First-party Nominal command-line tool. Manages Nominal connection profiles
+    (base URL + API key + workspace) stored on disk at ~/.config/nominal/config.yml,
+    so credentials are not embedded in scripts, and provides access to Nominal Core
+    test data storage & compute from the terminal.
+  key_flows:
+  - Interactive profile setup (prompts for base URL, API key, and workspace; writes
+    ~/.config/nominal/config.yml)
+  - Secure on-disk credential storage for use by the Python/Rust SDKs
+notes: The Python SDK also ships CLI entry points, but `nom` (from the Rust client)
+  is the primary first-party CLI referenced by the auth/profile docs.

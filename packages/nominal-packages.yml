@@ -1,0 +1,57 @@
+generated: '2026-07-20'
+method: searched
+source: PyPI, crates.io, pkg.go.dev, GitHub (nominal-io), VIPM
+packages:
+- language: python
+  registry: pypi
+  name: nominal
+  url: https://pypi.org/project/nominal/
+  install: pip install nominal
+  repo: https://github.com/nominal-io/nominal-client
+  official: true
+  description: Nominal Python SDK — upload data, automate test workflows, and integrate
+    Nominal into scripted environments.
+- language: rust
+  registry: crates.io
+  name: nominal-api
+  url: https://crates.io/crates/nominal-api
+  install: cargo add nominal-api
+  official: true
+  description: Rust API objects/services (Conjure-generated) for the Nominal Core API.
+- language: rust
+  registry: github
+  name: nominal-client-rs
+  url: https://github.com/nominal-io/nominal-client-rs
+  install: cargo install --git https://github.com/nominal-io/nominal-client-rs
+  official: true
+  description: Rust client and the `nom` CLI for Nominal test data storage & compute.
+- language: go
+  registry: pkg.go.dev
+  name: github.com/nominal-io/nominal-api-go
+  url: https://pkg.go.dev/github.com/nominal-io/nominal-api-go
+  install: go get github.com/nominal-io/nominal-api-go
+  repo: https://github.com/nominal-io/nominal-api-go
+  official: true
+  description: Official Go SDK for the Nominal Core API.
+- language: go
+  registry: github
+  name: nominal-streaming-go
+  url: https://github.com/nominal-io/nominal-streaming-go
+  install: go get github.com/nominal-io/nominal-streaming-go
+  official: true
+  description: Go library for low-latency streaming to Nominal Core.
+- language: rust
+  registry: github
+  name: nominal-streaming
+  url: https://github.com/nominal-io/nominal-streaming
+  install: cargo add --git https://github.com/nominal-io/nominal-streaming
+  official: true
+  description: Rust library for durable, low-latency streaming into Nominal Core.
+- language: labview
+  registry: vipm
+  name: nominal_lib_nominal_io_client
+  url: https://www.vipm.io/package/nominal_lib_nominal_io_client/
+  repo: https://github.com/nominal-io/labview-client
+  official: true
+  description: Nominal IO Client Toolkit for LabVIEW — stream test data from DAQ systems
+    and test stands into Nominal Core.

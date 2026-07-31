@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.nominal.io/llms.txt
+status: published
+server:
+  name: nominal-docs
+  transport: http
+  url: https://docs.nominal.io/_mcp/server
+  scope: documentation
+  description: Nominal's hosted documentation MCP server for AI clients (Claude Code,
+    Cursor, etc.). Serves the Nominal docs corpus over MCP so agents can retrieve
+    product, SDK, and API-reference guidance. This is a docs-retrieval MCP server;
+    it is not (as of this pass) a documented control-plane MCP server over the Nominal
+    Core API operations.
+notes: An operational MCP server over the Nominal Core API (api.gov.nominal.io/api)
+  would be derivable from an OpenAPI/Conjure spec, but Nominal publishes its API via
+  Conjure (not OpenAPI) and the API reference is login-gated, so no per-operation tool
+  list is derived here.

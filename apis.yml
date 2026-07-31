@@ -1,8 +1,28 @@
 aid: nominal
 name: Nominal
-description: 'Nominal is a company surfaced as a portfolio company of founders-fund, general-catalyst,
-  lightspeed-venture-partners, lux-capital and added to the API Evangelist network as a stub for enrichment.
-  Sector: deep-tech. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Nominal is the unified software suite for testing and operating advanced
+  hardware — flight systems, satellites, robotics, energy, and other mission-critical
+  engineering programs. Nominal Core is a collaborative workspace that captures, monitors,
+  and analyzes multimodal test data (telemetry, logs, video, and simulation results)
+  across datasets, runs, assets, channels, workbooks, and checklists, while Nominal
+  Connect runs at the edge to read from and write to instruments in real time from
+  Python. Nominal exposes an open Conjure-based REST API at api.gov.nominal.io/api,
+  with first-party SDKs for Python, Rust (and the nom CLI), Go, and LabVIEW, plus a
+  documentation MCP server for AI clients. Backed by Founders Fund, General Catalyst,
+  Lightspeed Venture Partners, and Lux Capital.'
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://nominal.io/favicon.ico
 url: https://raw.githubusercontent.com/api-evangelist/nominal/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -15,16 +35,85 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 13
+  pass: local-v1
 tags:
 - Company
 - Deep Tech
-apis: []
+- Test and Measurement
+- Hardware
+- Aerospace
+- Telemetry
+- Observability
+- Industrial Data
+- Data Platform
+- SDKs
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Nominal Core API
+  description: The Nominal Core REST API (Conjure-generated) for test data storage,
+    ingest, streaming, compute, and asset/run/checklist management.
+  humanURL: https://docs.nominal.io/api-reference
+  baseURL: https://api.gov.nominal.io/api
+  properties:
+  - type: Documentation
+    url: https://docs.nominal.io/api-reference
+  - type: GettingStarted
+    url: https://docs.nominal.io/python/quickstart
 common:
 - type: Website
   url: https://www.nominal.io
+- type: DeveloperPortal
+  url: https://docs.nominal.io/home
+- type: Documentation
+  url: https://docs.nominal.io/home
+- type: APIReference
+  url: https://docs.nominal.io/api-reference
+- type: GettingStarted
+  url: https://docs.nominal.io/python/quickstart
+- type: GitHubOrganization
+  url: https://github.com/nominal-io
+- type: Blog
+  url: https://nominal.io/blog
+- type: SignUp
+  url: https://app.gov.nominal.io
+- type: StatusPage
+  url: https://status.nominal.io
+  name: Nominal Status
+- type: TrustCenter
+  url: https://trust.nominal.io
+- type: Compliance
+  url: https://trust.nominal.io
+  name: SOC 2 Type II, CMMC, NIST 800-171
+- type: MCPServer
+  url: mcp/nominal-mcp.yml
+- type: LLMsTxt
+  url: llms/nominal-llms.txt
+- type: Packages
+  url: packages/nominal-packages.yml
+- type: SDKs
+  url: packages/nominal-packages.yml
+- type: CLI
+  url: cli/nominal-cli.yml
+- type: Authentication
+  url: authentication/nominal-authentication.yml
+- type: Conventions
+  url: conventions/nominal-conventions.yml
+- type: WellKnown
+  url: well-known/nominal-well-known.yml
+- type: Conformance
+  url: conformance/nominal-conformance.yml
+- type: Lifecycle
+  url: lifecycle/nominal-lifecycle.yml
+- type: ChangeLog
+  url: changelog/nominal-changelog.yml
+- type: DomainSecurity
+  url: security/nominal-domain-security.yml

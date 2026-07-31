@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+probe: false
+source: https://trust.nominal.io
+url: https://trust.nominal.io
+certifications:
+- SOC 2 Type II
+- CMMC Level 1
+- CMMC Level 2 Self-Assessment
+- NIST 800-171 (SPRS submission)
+documents:
+- SOC 2 Type II Report
+- CMMC Level 1
+- CMMC Level 2 Self-Assessment
+- NIST 800-171 SPRS Submission
+- Penetration test reports (2025)
+- Privacy Policy
+- Commercial Terms
+note: Nominal Trust Center is a hosted SafeBase portal (JS-rendered, so the automated
+  keyword probe returned no verified body); certification set confirmed via the trust
+  center and Nominal press/case-study sources. Defense-oriented posture (CMMC / NIST
+  800-171) is consistent with Nominal's flight/hardware customer base.
