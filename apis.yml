@@ -10,6 +10,17 @@ description: 'Nominal is the unified software suite for testing and operating ad
   with first-party SDKs for Python, Rust (and the nom CLI), Go, and LabVIEW, plus a
   documentation MCP server for AI clients. Backed by Founders Fund, General Catalyst,
   Lightspeed Venture Partners, and Lux Capital.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
