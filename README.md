@@ -64,6 +64,100 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Nominal is a company surfaced as a portfolio company of founders-fund, general-catalyst, lightspeed-venture-partners, lux-capital and added to the API Evangelist network as a stub for enrichment. Sector: deep-tech. This profile is a lead awaiting the enrichment pipeline.
+Nominal is the unified software suite for testing and operating advanced hardware — flight systems, satellites, robotics, energy, and other mission-critical engineering programs. Nominal Core is a collaborative workspace that captures, monitors, and analyzes multimodal test data (telemetry, logs, video, and simulation results) across datasets, runs, assets, channels, workbooks, and checklists, while Nominal Connect runs at the edge to read from and write to instruments in real time from Python. Nominal exposes an open Conjure-based REST API at api.gov.nominal.io/api, with first-party SDKs for Python, Rust (and the nom CLI), Go, and LabVIEW, plus a documentation MCP server for AI clients. Backed by Founders Fund, General Catalyst, Lightspeed Venture Partners, and Lux Capital.
 
-Backed by: founders-fund, general-catalyst, lightspeed-venture-partners, lux-capital — https://www.nominal.io
+**Areas:** Company · Deep Tech · Test and Measurement · Hardware · Aerospace · Telemetry · Observability · Industrial Data · Data Platform · SDK
+
+## Nominal on APIs.io
+
+Everything profiled for Nominal is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/nominal/](https://apis.io/providers/nominal/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Nominal Core API](https://apis.io/apis/nominal/nominal-core-api/) — The Nominal Core REST API (Conjure-generated) for test data storage, ingest, streaming, compute, and asset/run/checklist management.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [nominal-docs](https://apis.io/servers/nominal/nominal-docs/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Nominal Authentication](https://apis.io/security/nominal/nominal-authentication/)
+- [Nominal Domain Security](https://apis.io/security/nominal/nominal-domain-security/)
+- [Nominal Trust Center](https://apis.io/security/nominal/nominal-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.nominal.io)
+- [Documentation](https://docs.nominal.io/home)
+- [Getting started](https://docs.nominal.io/python/quickstart)
+- [API reference](https://docs.nominal.io/api-reference)
+- [Sign up](https://app.gov.nominal.io)
+- [Blog](https://nominal.io/blog)
+- [Compliance](https://trust.nominal.io)
+- [Trust centre](https://trust.nominal.io)
+- [GitHub](https://github.com/nominal-io)
+- [Status](https://status.nominal.io)
+
+## API Evangelist rating
+
+**Kin Score 32.5** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.7 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 34.2 |
+| Developer ergonomics | 59.5 |
+| Access clarity | 28.9 |
+
+**Agent readiness 8.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 21.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/nominal/](https://apis.io/providers/nominal/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Nominal: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/nominal/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
