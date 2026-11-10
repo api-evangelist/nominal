@@ -72,9 +72,10 @@ Nominal is the unified software suite for testing and operating advanced hardwar
 
 Everything profiled for Nominal is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/nominal/](https://apis.io/providers/nominal/)** — or go straight to one of the APIs or properties below.
 
-### APIs (1)
+### APIs (2)
 
 - [Nominal Core API](https://apis.io/apis/nominal/nominal-core-api/) — The Nominal Core REST API (Conjure-generated) for test data storage, ingest, streaming, compute, and asset/run/checklist management.
+- [Nominal API](https://apis.io/apis/nominal/nominal-api/) — Nominal API as documented publicly: 52 operations. Contract generated from the documentation by API Evangelist (2026-11-09); not the provider's own document.
 
 ### Published properties
 
@@ -85,6 +86,29 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 Model Context Protocol servers that expose the API to agents.
 
 - [nominal-docs](https://apis.io/servers/nominal/nominal-docs/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [PostApiComputeV2ComputeBatchRequest](https://apis.io/schemas/nominal/nominal-post-api-compute-v2-compute-batch-request/)
+- [PostApiComputeV2ComputeParameterizedRequest](https://apis.io/schemas/nominal/nominal-post-api-compute-v2-compute-parameterized-request/)
+- [PostApiComputeV2ComputewithunitsRequest](https://apis.io/schemas/nominal/nominal-post-api-compute-v2-computewithunits-request/)
+- [PostComputeV2ComputeParameterizedRequest](https://apis.io/schemas/nominal/nominal-post-compute-v2-compute-parameterized-request/)
+- [PostComputeV2ComputeRequest](https://apis.io/schemas/nominal/nominal-post-compute-v2-compute-request/)
+- [PutApiDataSourceConnectionV1ConnectionRidRequest](https://apis.io/schemas/nominal/nominal-put-api-data-source-connection-v1-connection-rid-request/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Nominal Context](https://apis.io/jsonld/nominal/nominal-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Nominal API Rules](https://apis.io/rules/nominal/nominal-rules/)
 
 #### Security (3)
 
@@ -98,20 +122,22 @@ Authentication, trust centre, and vulnerability disclosure.
 
 Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- [Website](https://www.nominal.io)
+- [Website](https://nominal.io)
 - [Documentation](https://docs.nominal.io/home)
 - [Getting started](https://docs.nominal.io/python/quickstart)
 - [API reference](https://docs.nominal.io/api-reference)
 - [Sign up](https://app.gov.nominal.io)
 - [Blog](https://nominal.io/blog)
+- [Security](https://nominal.io/security)
 - [Compliance](https://trust.nominal.io)
 - [Trust centre](https://trust.nominal.io)
+- [Privacy policy](https://docs.nominal.io/privacy-policy)
 - [GitHub](https://github.com/nominal-io)
 - [Status](https://status.nominal.io)
 
 ## API Evangelist rating
 
-**Kin Score 32.5** — thin · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 32.5** — thin · rubric 0.25.0 · scored 2026-10-23
 
 | Facet | Score |
 |---|---|
@@ -145,6 +171,8 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
 
 **Regulatory alignment 21.6** — Horizontal (data, software, accessibility, platform)
 
